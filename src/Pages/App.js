@@ -18,11 +18,11 @@ const generateSequence = (length) => {
 const App = () => {
   const [sequence, setSequence] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(30); // 30 seconds for example
+  const [timeLeft, setTimeLeft] = useState(30); 
   const [feedback, setFeedback] = useState('');
 
   useEffect(() => {
-    setSequence(generateSequence(10)); // Generate sequence of 10 letters
+    setSequence(generateSequence(10)); 
   }, []);
 
   useEffect(() => {
